@@ -30,6 +30,40 @@ pip install -r requirements.txt
 * `src/`: Contient le code source du projet
 * `tests/`: Test unitaires
 
+
+---
+
+# Git Setup Guide
+
+## Initial Configuration
+```bash
+git config --global user.name "Your_Name"
+git config --global user.email "your.email@example.com"
+
+# Initialize Git in project folder
+git init
+
+# Create .gitignore
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Add all files and commit
+git add .
+git commit -m "Initial commit"
+
+# Link local to GitHub repository
+git remote add origin https://USERNAME:YOUR_TOKEN@github.com/USERNAME/REPO.git
+git branch -M main
+git push -u origin main
+
+git status          # Check changes
+git add .           # Stage all changes
+git commit -m "..."  # Commit with message
+git push           # Push to GitHub
+
+---
 ---
 
 ```bash
