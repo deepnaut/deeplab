@@ -48,8 +48,32 @@ git config --global user.email "email@utilisé_sur_github.com"
 
 cd path
 git init
+```
 
 .gitignore
 
+```bash
 git add .
+git commit -m "Initial commit : projet deeplab"
+```
+
+create new repo
+https://github.com/deepnaut/deeplab.git
+
+```bash
+git remote add origin https://github.com/deepnaut/deeplab.git            
+git branch -M main
+git push -u origin main
+```
+
+```bash
+git add .
+git commit -m "Description des modifications"
+git push
+```
+
+token
+
+```bash
+git status
 ```
